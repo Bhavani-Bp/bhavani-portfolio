@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <h1 class="name">Bhavani Prakash</h1>
+      <div class="toggle-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#studies">Studies</a></li>
+        <li class="dropdown">
+          <a href="#projects">Projects</a>
+          <ul class="dropdown-content">
+            <li><a href="#waste-segregation">Waste Segregation using CNN</a></li>
+            <li><a href="#hospital-management">Hospital Management System</a></li>
+            <li><a href="#internal-chat">Internal Chat Application</a></li>
+          </ul>
+        </li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <a href="https://github.com/Bhavani-Bp" target="_blank">
+        <img src="github_image.png" alt="GitHub" class="icon" />
+      </a>
+      <a href="https://www.linkedin.com/in/bhavani-prakash-gadisetti-752b7b23b/" target="_blank">
+        <img src="linkedinimage.png" alt="LinkedIn" class="icon" />
+      </a>
+      <button class="contact-btn" onclick="contactMe()">Contact Me</button>
+    </div>
+  </nav>
+  
+  <section id="hero" class="hero-section">
+    <div class="hero-container">
+      <img src="gbhavaniprakash.jpg" alt="Gadisetti Bhavani Prakash" class="profile-image" />
+      <h1 class="hero-text">I am Gadisetti Bhavani Prakash<br />a recent passed out student 2025</h1>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-container">
+      <h2>About Me</h2>
+      <p>I am an enthusiastic Computer Science graduate with a strong passion 
+        for continuous learning and exploring new technologies. I am highly adaptable, 
+        curious, and always eager to expand my knowledge to keep pace with the evolving
+        tech world. With strong communication skills and a collaborative mindset, I thrive
+        as a team player and am committed to contributing meaningfully wherever I work. I 
+        believe in growing every day, embracing challenges, and creating solutions that make
+        a positive impact.</p>
+      <br>
+      <p>I am a highly adaptable and curious individual who thrives on continuous learning. My strong communication skills and collaborative mindset make me an effective team player, while my dedication and perseverance help me stay focused on achieving goals even in challenging situations.</p>
+    </div>
+  </section>
+
+  <section id="studies">
+    <div class="section-container">
+      <h2>My Studies</h2>
+      <ul class="studies-list">
+        <li><strong>Degree:</strong> Bachelor of Technology in Computer Science and Engineering</li>
+        <li><strong>College:</strong> BABA Institute of Technology and Sciences</li>
+        <li><strong>University Affiliation:</strong> JNTU-GV</li>
+        <li><strong>Year of Graduation:</strong> 2025</li>
+        <li><strong>Percentage:</strong> 76%</li>
+        <li><strong>Relevant Courses:</strong> Data Structures, DBMS, Web Development, Operating Systems</li>
+        <li><strong>Skill-Oriented Programs:</strong> Participated in various skill-oriented programs conducted by the college</li>
+        <li><strong>Certifications:</strong> Python Full Stack Developer Internship Certification by AVA, Django course by Telusko, Python Telugu Web Guru</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-container">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div id="waste-segregation" class="project-card">
+          <img src="wastesegregationimage.jpg" alt="Waste Segregation Project" class="project-image" />
+          <h3>Waste Segregation using CNN</h3>
+          <ul class="project-details">
+            <li><strong>Project Name:</strong> Waste Segregation using CNN</li>
+            <li><strong>Duration:</strong> January 2025 – April 2025</li>
+            <li><strong>Objective:</strong> To classify and segregate waste into biodegradable and non-biodegradable categories using Convolutional Neural Networks, enabling smart waste management systems.</li>
+            <li><strong>Technology Stack:</strong> Python, TensorFlow, Keras, OpenCV</li>
+            <li><strong>Tools Used:</strong> Jupyter Notebook, Google Colab, Anaconda (achieved with 92% accuracy)</li>
+          </ul>
+        </div>
+        <div id="hospital-management" class="project-card">
+          <img src="hospitalmanagementsystem.jpg" alt="Hospital Management System" class="project-image" />
+          <h3>Hospital Management System</h3>
+          <ul class="project-details">
+            <li><strong>Project Name:</strong> Hospital Management System</li>
+            <li><strong>Duration:</strong> September 2024 – December 2024</li>
+            <li><strong>Objective:</strong> To develop an automated hospital management system that eliminates the need for receptionist involvement by enabling patients to generate, create, and manage their own appointments and bookings efficiently, ensuring seamless operational workflows and enhanced patient experience.</li>
+            <li><strong>Technology Stack:</strong> HTML, CSS, JavaScript (DOM Manipulation), Django (Python), SQL Databases, MVT Pattern</li>
+            <li><strong>Tools Used:</strong> SQLite (development), PostgreSQL (testing & deployment), VS Code</li>
+          </ul>
+        </div>
+        <div id="internal-chat" class="project-card">
+          <img src="internalchatapplicationsystem.jpg" alt="Internal Chat Application" class="project-image" />
+          <h3>Internal Chat Application</h3>
+          <ul class="project-details">
+            <li><strong>Project Name:</strong> Internal Chat Application</li>
+            <li><strong>Duration:</strong> March 2024 – May 2024</li>
+            <li><strong>Objective:</strong> To develop a secure real-time internal chat application for company employees, enabling instant messaging, employee ID-based authentication, and efficient communication without permission restrictions.</li>
+            <li><strong>Technology Stack:</strong> Django, Django REST Framework (DRF), Django Channels, Redis, PostgreSQL/MySQL, HTML, CSS, JavaScript, React.js/Vue.js, WebSockets, JWT Authentication, MVT Pattern</li>
+            <li><strong>Tools Used:</strong> VS Code, SQLite (development), PostgreSQL/MySQL (production)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <div class="section-container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>C (Structures, Unions, Pointers)</li>
+            <li>C++ (Basic Syntax)</li>
+            <li>Python (OOPs, Libraries, Module Integration)</li>
+            <li>Java (Academic Level)</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Web Development</h3>
+          <ul>
+            <li>Frontend: HTML, CSS, JavaScript</li>
+            <li>Backend: Django (MVT Pattern)</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Database Technologies</h3>
+          <ul>
+            <li>SQLite</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Data Science & ML</h3>
+          <ul>
+            <li>Machine Learning Concepts</li>
+            <li>Deep Learning Concepts</li>
+            <li>Big O Notation Analysis</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Data Structures & Algorithms</h3>
+          <ul>
+            <li>Problem Solving Techniques</li>
+            <li>DSA with Python</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <div class="section-container">
+      <h2>Hobbies</h2>
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <img src="technologyupdateimage.jpg" alt="Exploring Latest Technologies" class="hobby-image" />
+          <h3>Exploring Latest Technologies</h3>
+          <p>I love staying updated with emerging tools, frameworks, and AI advancements to build efficient solutions and enhance my development skills.</p>
+        </div>
+        <div class="hobby-card">
+          <img src="playingbtmintionimage.jpg" alt="Playing Badminton" class="hobby-image" />
+          <h3>Playing Badminton</h3>
+          <p>Playing badminton helps me maintain focus, build strategic thinking, and keep a healthy work-life balance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p class="footer-name">Gadisetti Bhavani Prakash</p>
+        <p>
+          <a href="tel:+919652871154">+91 9652871154</a> |
+          <a href="mailto:gadisettibhavaniprakash@gmail.com">gadisettibhavaniprakash@gmail.com</a>
+        </p>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.linkedin.com/in/bhavani-prakash-gadisetti-752b7b23b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/Bhavani-Bp" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="BhavaniPrakash_resume.pdf" download class="download-button">Download Resume</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
